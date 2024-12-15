@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Mood Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <button id="pageTrackerButton" onclick="location.href='tracker.html'">Page Tracker</button>
+  <h1>My Mood Tracker</h1>
+  <div class="main-container">
+    <div class="form-container">
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" />
+      <label for="mood">Select Mood:</label>
+      <select id="mood">
+        <option value="really happy">😄 Really Happy</option>
+        <option value="happy">😊 Happy</option>
+        <option value="content">😌 Content</option>
+        <option value="sad">😢 Sad</option>
+        <option value="tired">😴 Tired</option>
+      </select>
+      <button id="saveMood">Save Mood</button>
+    </div>
+    <div class="table-and-chart">
+      <table id="moodTable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Mood</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic Mood Rows -->
+        </tbody>
+      </table>
+      <canvas id="moodChart" width="200" height="200"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

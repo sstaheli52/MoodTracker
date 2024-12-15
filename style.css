@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    font-family: "Brush Script MT", cursive;
+    font-size: 48px;
+    margin: 20px 0;
+  }
+  
+  #pageTrackerButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  #pageTrackerButton:hover {
+    background-color: #45a049;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .table-and-chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 300px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  canvas {
+    max-width: 250px; /* 1/3 larger */
+    max-height: 250px;
+    background-color: white;
+  }
+
+  #backToMoodTrackerButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  #backToMoodTrackerButton:hover {
+    background-color: #45a049;
+  }
+  
+  
